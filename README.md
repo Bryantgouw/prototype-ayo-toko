@@ -14,6 +14,11 @@ PERANCANGAN DESAIN INTERAKSI INKLUSIF APLIKASI AYO TOKO BAGI PENGGUNA DEWASA MAD
 ## 🚀 Deskripsi Prototype
 Prototype yang dirancang berfokus pada simplifikasi menu, fitur, dan alur pemakaian dari Aplikasi AYO TOKO. Aplikasi ini merupakan salah satu aplikasi kunci dalam ekosistem AYO by Sampoerna Retail Company (SRC) yang digunakan oleh toko kelontong SRC untuk mengelola dan mengembangkan bisnis mereka di era digital. Adapun fitur yang dikembangkan pada prototype ini mencakup pemesanan stok produk dan aksesibilitas pusat bantuan
 
+<figure align="center">
+  <img width="1920" height="1080" alt="Your paragraph text" src="https://github.com/user-attachments/assets/e294cee7-4694-4f57-b2e8-112b5e77a77c" />
+  <figcaption>Gambar: Desain Antarmuka Prototype Aplikasi AYO TOKO</figcaption>
+</figure>
+
 ---
 
 ## 🛠️ Technology Stack
