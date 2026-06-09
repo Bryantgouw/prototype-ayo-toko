@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AYO Toko</title>
+
+  <!-- Important Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="../css/belanja.css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <a href="home.html">
+            <i class="material-icons back-icon">
+                chevron_left
+            </i>
+        </a>
+        <h4 class="header-title">
+        Pilih Toko
+        </h4>
+    </div>
+
+    <div class="container">
+        <div class="search-wrapper">
+            <input
+                id="search-input"
+                type="text"
+                placeholder="Cari toko di sini ..."
+                class="search-input">
+            <button class="search-button">
+                <i class="material-icons">search</i>
+            </button>
+        </div>
+
+        <div id="store-list-container" class="list-of-store-cards">
+            <!-- <div class="store-card" style="position: relative;">
+                <a href="selectbelanja.html" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></a>
+                <div class="store-image-wrapper">
+                    <div class="mitra-badge">
+                    Mitra
+                    </div>
+                    <img
+                    src="../assets/images/foto_toko.png"
+                    class="store-image">
+                </div>
+                <div class="store-info">
+                    <div class="store-name">
+                    H. Budi Setiabudhi
+                    </div>
+                    <div class="store-address">
+                    Jl. Cihampelas V, Bandung Utara
+                    </div>
+                </div>
+            </div>
+
+            <div class="store-card" style="position: relative;">
+                <a href="selectbelanja.html" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></a>
+                <div class="store-image-wrapper">
+                    <img
+                    src="../assets/images/foto_toko.png"
+                    class="store-image">
+                </div>
+                <div class="store-info">
+                    <div class="store-name">
+                    Toko Fikri
+                    </div>
+                    <div class="store-address">
+                    Jl. Ganesha VII, Bandung Utara
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+    </div>
+    <!-- ===== MAIN JS ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="../js/belanja.js"></script>
+</body>
+</html>

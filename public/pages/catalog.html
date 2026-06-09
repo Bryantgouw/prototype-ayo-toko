@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AYO Toko</title>
+
+  <!-- Important Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="../css/belanja.css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <a href="selectbelanja.html">
+        <i class="material-icons back-icon">
+            chevron_left
+        </i>
+        </a>
+        <div class="title-wrapper">
+            <h4 id="catalog-store-name" class="header-title">
+                Memuat toko...
+            </h4>
+            <h4 id="catalog-store-address" class="header-subtitle">
+                Memuat lokasi...
+            </h4>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="search-wrapper catalog">
+            <input
+                id="product-search-input"
+                type="text"
+                placeholder="Cari produk di sini ..."
+                class="search-input">
+            <button class="search-button">
+                <i class="material-icons">search</i>
+            </button>
+        </div>
+
+        <div class="category-list">
+            <div class="chip filter-catalog active">Rokok</div>
+            <div class="chip filter-catalog">Makanan</div>
+            <div class="chip filter-catalog">Minuman</div>
+            <div class="chip filter-catalog">Lainnya</div>
+        </div>
+
+        <div id="product-grid-container" class="row product-grid">
+            
+        </div>
+    </div>
+
+    <div class="bottom-cart-bar">
+        <div class="cart-summary">
+            <span class="cart-label">Keranjang</span>
+            <span id="total-cart-price" class="cart-total">Rp 0</span>
+        </div>
+        <button class="btn white black-text checkout-btn" onclick="window.location.href='checkout.html';">
+            Check Out
+        </button>
+    </div>
+
+    <!-- ===== MAIN JS ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="../js/belanja2.js"></script>
+</body>
+</html>

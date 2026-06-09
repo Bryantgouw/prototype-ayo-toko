@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AYO Toko</title>
+
+  <!-- Important Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="../css/belanja.css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <div class="product-viewer">
+        <a href="catalog.html" class="back-circle"><i class="material-icons back-to-catalog">chevron_left</i></a>
+        <img id="detail-product-img" src="" class="responsive-img main-product-img">
+    </div>
+    <div class="product-details">
+        <h1 id="detail-product-name" class="d-name">Memuat nama produk...</h1>
+        <p id="detail-product-unit" class="d-unit">Bungkus</p>
+        <p id="detail-product-price" class="d-price">Memuat harga produk...</p>
+
+        <div class="description">
+            <p class="label">Deskripsi</p>
+            <p id="detail-product-desc" class="text">Memuat deskripsi...</p>
+        </div>
+
+        <div class="purchase-actions">
+            <div class="add-del">
+                <button id="detail-minus-btn" class="q-btn active"><i class="material-icons">remove</i></button>
+                <div class="qty-large-selector">
+                    <span id="detail-qty-val" class="q-num">0</span>
+                </div>
+                <button id="detail-plus-btn" class="q-btn active"><i class="material-icons">add</i></button>
+            </div>
+            <button id="detail-add-to-cart" class="btn-large grey btn-block add-to-cart-btn">Tambah ke Keranjang</button>
+        </div>
+    </div>
+
+    <!-- ===== MAIN JS ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="../js/belanja2.js"></script>
+</body>
+</html>

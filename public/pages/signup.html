@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AYO Toko</title>
+
+  <!-- Important Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="../css/auth.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back_ios_new" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <div class="valign-wrapper signup">
+        <div class="container center-align">
+            <div class="signup-card">
+
+            <!-- Title -->
+            <h1 class="title center-align daftar">
+                <a href="../pages/login.html" class="material-icons" id="back-icon">arrow_back_ios_new</a>
+                <span id="daftar">Daftar</span>
+            </h1>
+
+            <form id="signup-form">
+                <label class="label-text">
+                    Nama<span class="required">*</span>
+                </label>
+                <div class="container input-box">
+                    <input class="default-input" type="text" id="nama-pemilik-input" placeholder="Nama" required>
+                </div>
+
+                <label class="label-text">
+                    Nama Toko<span class="required">*</span>
+                </label>
+                <div class="container input-box">
+                    <input class="default-input" type="text" id="nama-toko-input" placeholder="Nama Toko" required>
+                </div>
+
+                <label class="label-text">
+                    Nomor Ponsel<span class="required">*</span>
+                </label>
+                <div class="container input-box">
+                    <div class="country-code">+62</div>
+                    <input class="default-input" type="text" id="phone-input" placeholder="Nomor Ponsel" required>
+                </div>
+
+                <!-- Button -->
+                <a href="https://maps.google.com/" class="waves-effect waves-light btn lokasi">
+                    <span>Pilih Lokasi Toko</span>
+                    <i class="material-icons" id="location-icon">location_on</i>
+                </a>
+
+                <label class="label-text">
+                    Kode Toko<span class="required">*</span>
+                </label>
+                <div class="container input-box">
+                    <input class="default-input" type="text" id="kode-toko-input" placeholder="Kode Toko" required>
+                </div>
+
+                <label class="label-text">
+                    Kode Keamanan<span class="required">*</span>
+                </label>
+                <div class="container input-box">
+                    <input class="default-input" type="password" id="kode-keamanan-input" placeholder="Kode Keamanan" required>
+                </div>
+
+                <label class="label-text">
+                    Kode Referral
+                </label>
+                <div class="container input-box">
+                    <input class="default-input" type="text" id="kode-referral-input" placeholder="Kode Referral (Opsional)">
+                </div>
+
+                <!-- Button -->
+                <button type="submit" class="waves-effect waves-light btn submit">DAFTAR</button>
+            </form>
+            </div>
+        </div>
+    </div>
+    
+  <!-- ===== MAIN JS ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../js/auth.js"></script>
+</body>
+</html>

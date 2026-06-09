@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AYO Toko</title>
+
+  <!-- Important Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="../css/belanja.css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <a href="catalog.html">
+        <i class="material-icons back-icon">
+            chevron_left
+        </i>
+        </a>
+        <h4 class="header-title">
+        Check Out
+        </h4>
+    </div>
+
+    <main>
+        <div class="container-fluid">
+            <div id="checkout-list-container">
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-payment">
+        <div class="payment-info">
+            <p class="label">Total Pembayaran</p>
+            <p id="checkout-total-amount" class="total-amount">Rp 0</p>
+        </div>
+        <button class="btn-large btn-bayar waves-effect waves-light"  onclick="window.location.href='home.html';">Bayar</button>
+    </footer>
+
+    <!-- ===== MAIN JS ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="../js/belanja2.js"></script>
+</body>
+</html>

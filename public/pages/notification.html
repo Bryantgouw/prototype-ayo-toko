@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AYO Toko</title>
+
+  <!-- Important Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="../css/notification.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <!-- ===== HEADER ===== -->
+    <div class="header-wrapper z-depth-1">
+
+        <h4 class="header-title center-align">
+        Notifikasi
+        </h4>
+
+    </div>
+
+    <!-- ===== TABS ===== -->
+    <div class="tabs-wrapper">
+
+        <div class="tab-item active-tab">
+        Belanja
+        </div>
+
+        <div class="tab-item">
+            <a href="berita.html" style="color: inherit; text-decoration: none; display: block;">
+                Lainnya
+            </a>
+        </div>
+
+    </div>
+
+    <!-- ===== FILTER BUTTON ===== -->
+    <div class="container">
+
+        <div class="dropdown-container">
+            <div class="filter-btn z-depth-1" id="dropdownBtn">
+                <span id="current-filter-text">Selesai</span>
+                <i class="material-icons drop-down">arrow_drop_down</i>
+            </div>
+
+            <div class="custom-dropdown-content" id="dropdownMenu">
+                <div class="dropdown-header">
+                    <span class="header-text">Status Pesanan</span>
+                    <i class="material-icons arrow-up">arrow_drop_up</i>
+                </div>
+                <ul class="dropdown-list" id="dropdown-status-list">
+                    <li>Dalam Proses</li>
+                    <li>Pengiriman</li>
+                    <li class="active">Selesai</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="list-of-notifications" id="notification-list-container">
+        </div>
+    </div>
+
+    <nav class="bottom-nav-fixed">
+        <div class="row white z-depth-2 nav-bar-rounded">
+            <div class="col s4 center-align nav-item inactive">
+                <a href="home.html" style="color: inherit; text-decoration: none; display: block;">
+                    <i class="material-icons nav-icons">home</i>
+                    <span id="nav-button">Beranda</span>
+                </a>
+            </div>
+            <div class="col s4 center-align nav-item inactive">
+                <i class="material-icons nav-icons">person</i>
+                <span id="nav-button">Profil</span>
+            </div>
+            <div class="col s4 center-align nav-item active">
+                <i class="material-icons nav-icons">notifications</i>
+                <span id="nav-button">Notifikasi</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== MAIN JS ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="../js/notification.js"></script>
+</body>
+</html>

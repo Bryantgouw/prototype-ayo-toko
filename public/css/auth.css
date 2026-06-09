@@ -1,0 +1,231 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+h1{
+  color: #424242;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.daftar{
+  display: flex;
+  align-items: center;      
+  justify-content: space-between; 
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.back-arrow{
+  margin-bottom: 150px !important;
+}
+
+#daftar{
+  color: #D91721;
+  margin: 0;     
+  flex-grow: 1;  
+  text-align: center;
+}
+
+#back-icon{
+  color: inherit;          
+  text-decoration: none;
+}
+
+.valign-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.valign-wrapper.login.auth{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;   
+  justify-content: flex-start;
+  padding-top: 50px;     
+}
+
+.valign-wrapper.panduan{
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(#FFFFFF, #ADADAD);
+}
+
+.valign-wrapper.signup {
+  padding: 0 0 35px 0;
+}
+
+.valign-wrapper.login{
+  background: linear-gradient(#FFFFFF, #ADADAD);
+}
+
+.label-text{
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 22px;
+  font-weight: 500;
+  color: #424242;
+}
+
+.required{
+  color: #D91721;
+}
+
+.opsi-panduan{
+  margin-top: 20px;
+}
+
+.waves-effect.waves-light.btn{
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 15px 0;
+  height: auto;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: none !important;
+}
+
+.waves-effect.waves-light.btn.submit{
+  background-color: #D91721;
+}
+
+.waves-effect.waves-light.btn.submit.opsi{
+  margin-top: 15px !important;
+  margin-bottom: 0 !important;
+}
+
+.waves-effect.waves-light.btn.lokasi{
+  background-color: #F8B445;
+  align-items: center;
+  height: auto;
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  gap: 8px;   
+  margin: 20px 0;             
+}
+
+#location-icon{
+  font-size: 35px;
+}
+
+form > .container.input-box{
+  display: flex;
+  align-items: stretch;
+  padding: 0;
+  border: 3px solid #737373;
+  border-radius: 15px;
+  margin: 10px 0;
+  background-color: #FFFFFF;
+  width: 100%
+}
+
+.country-code {
+  background-color: #757575; 
+  border-radius: 10px 0 0 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 15px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+#phone-input {
+  border: none !important;        
+  box-shadow: none !important;    
+  margin: 0 !important;          
+  padding: 15px 15px !important;    
+  height: 100% !important;        
+  flex-grow: 1;                   
+  font-size: 22px;
+}
+
+.default-input {
+  border: none !important;        
+  box-shadow: none !important;    
+  margin: 0 !important;          
+  padding: 15px 15px !important;    
+  height: 100% !important;        
+  flex-grow: 1;                   
+  font-size: 22px !important;
+}
+
+.signup-button.class{
+  color: #D91721;
+  font-weight: bolder;
+}
+
+p{
+  font-size: 22px;
+  font-weight: 500;
+  color: #424242;
+}
+
+.kode-keamanan-insert{
+  margin-bottom: 0 !important;
+}
+
+.lupa-kode-keamanan{
+  margin-block-start: 0 !important;
+}
+
+.pin-input {
+  flex: none !important; 
+  width: 45px !important; 
+  aspect-ratio: 1 / 1.2; 
+  height: auto !important;
+  text-align: center;
+  font-size: 1.5rem !important;
+  font-weight: bold;
+  border: 3px solid #737373 !important;
+  border-radius: 12px !important;
+  background-color: white !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.pin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+  width: 100%;
+  margin: 30px auto;
+}
+
+.pin-input:focus {
+  border: 2px solid #d32f2f !important; 
+  background-color: #fff !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
+  transform: scale(1.05); 
+}
+
+@media only screen and (max-width: 360px) {
+  .pin-container {
+    gap: 5px;
+  }
+  .pin-input {
+    font-size: 1.2rem !important;
+    border-radius: 8px !important;
+  }
+}
+
+.label-text{
+  text-align: center;
+}

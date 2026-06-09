@@ -1,0 +1,107 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#splash-screen{
+    background-color: #D5131B;
+}
+
+#daftar{
+    height: 100%;
+    font-size: 26px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.menu-box {
+    border: 4px solid #DFDFDF !important;
+    border-radius: 20px !important;
+    box-shadow: none !important;
+    padding: 15px !important;
+    min-height: 265px;
+}
+
+.menu-label {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px !important;
+    color: #424242;
+}
+
+.content-shift{
+    padding-bottom: 100px;
+}
+
+.valign-wrapper.login.auth{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;   
+  justify-content: flex-start;
+  padding-top: 50px;     
+}
+
+.valign-wrapper.signup {
+  padding: 0 0 35px 0;
+}
+
+.valign-wrapper.login{
+  background: linear-gradient(#DB1721, #6A090E);
+}
+
+#back-icon{
+  color: #FFFFFF;          
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.comm-card {
+    border-radius: 20px !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2) !important;
+    aspect-ratio: 1 / 1.1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    margin: 10px 0;
+}
+
+.comm-link {
+    text-decoration: none !important;
+}
+
+.comm-link:active .comm-card {
+    transform: scale(0.95);
+}
+
+.row.space{
+    margin-bottom: 50px !important;
+}
+
+/* --- Ikon --- */
+.icon-box i {
+    font-size: 7rem !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .icon-box i {
+        font-size: 5.5rem !important;
+    }
+    .card-title-custom {
+        font-size: 1.1rem !important;
+    }
+}
+
+.card-title-custom {
+    display: block;
+    font-weight: bold;
+    font-size: 22px !important;
+    margin-top: 10px;
+}
+
+@media only screen and (min-width: 993px) {
+    .whole-container {
+        width: 60%;
+    }
+}
