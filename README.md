@@ -21,3 +21,8 @@ Prototype yang dirancang berfokus pada simplifikasi menu, fitur, dan alur pemaka
 * **Frontend:** HTML, CSS (Framework Tambahan: Materialize CSS), Javascript
 * **Database:** Supabase
 * **Deployment:** Vercel
+
+<figure align="center">
+  <img width="1462" height="1014" alt="database_skema" src="https://github.com/user-attachments/assets/a2bdc40c-6691-4fdc-b6ec-1bd607a657fc" />
+  <figcaption>Gambar: Desain Skema Database Prototype Aplikasi AYO TOKO (Supabase)</figcaption>
+</figure>
